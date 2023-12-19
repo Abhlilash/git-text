@@ -1,0 +1,14 @@
+<!-- iterationComponent.html -->
+<template>
+    <lightning-card title="company list">
+        <div class="slds-m-around_medium">
+            <ul>
+                <template for:each={companies} for:item="company">
+                    <li key={company.id} class="=item">
+                        {company.id} - {company.name} - {company.describtion}
+                        </li>>
+                    </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>
